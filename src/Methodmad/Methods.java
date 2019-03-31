@@ -30,7 +30,7 @@ public class Methods {
     public static boolean isPalindrome(String input)
     {
         String rev = "";
-        
+
     }
 
 }
