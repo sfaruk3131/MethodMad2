@@ -27,10 +27,17 @@ public class Methods {
         String partC = mdy.substring(6);
         return partB + "-" + partA + "-" + partC;
     }
-    public static boolean isPalindrome(String input)
+    public static boolean isPalindrome(String str)
     {
-        String rev = "";
-
+        String str2 = "";
+        str = str.toLowerCase();
+        for(int i = str.length() - 1; i > -1; i--)
+        {
+            str2 += str.substring(i, i + 1);
+        }
+        if (str.equals(str2))
+            return true;
+        return false;
     }
 
 }
